@@ -1,0 +1,2 @@
+vhdl isim_temp "rotate.vhd"
+vhdl isim_temp "rotate_tb.vhd"

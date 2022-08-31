@@ -1,0 +1,402 @@
+<html><body>
+<pre>
+ 
+cpldfit:  version P.20131013                        Xilinx Inc.
+                                  Fitter Report
+Design Name: rotate                              Date:  8-31-2022,  1:14PM
+Device Used: XC2C32A-6-VQ44
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+31 /32  ( 97%) 34  /112  ( 30%) 33  /80   ( 41%) 31 /32  ( 97%) 33 /33  (100%)
+
+** Function Block Resources **
+
+Function Mcells   FB Inps  Pterms   IO       CTC      CTR      CTS      CTE     
+Block    Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot Used/Tot
+FB1      16/16*    17/40    17/56    16/16*   0/1      1/1*     0/1      0/1
+FB2      15/16     16/40    17/56    15/16    0/1      1/1*     1/1*     0/1
+         -----    -------  -------   -----    ---      ---      ---      ---
+Total    31/32     33/80    34/112   31/32    0/2      2/2      1/2      0/2 
+
+CTC - Control Term Clock
+CTR - Control Term Reset
+CTS - Control Term Set
+CTE - Control Term Output Enable
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+GCK         GSR         GTS         DGE         
+Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+1/3         0/1         0/4         0/0
+
+Signal 'CLK' mapped onto global clock net GCK2.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+                                    |  I                :     1      1
+Input         :    1           1    |  I/O              :    24     24
+Output        :   31          31    |  GCK/IO           :     3      3
+Bidirectional :    0           0    |  GTS/IO           :     4      4
+GCK           :    1           1    |  GSR/IO           :     1      1
+GTS           :    0           0    |  
+GSR           :    0           0    |  
+                 ----        ----
+        Total     33          33
+
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'rotate.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 31 Outputs **
+
+Signal              Total Total Bank Loc     Pin   Pin       Pin     I/O      I/O       Slew Reg     Reg Init
+Name                Pts   Inps               No.   Type      Use     STD      Style     Rate Use     State
+OUTPUT<24>          2     2     2    FB1_1   38    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<23>          2     2     2    FB1_2   37    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<22>          2     2     2    FB1_3   36    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<21>          2     2     2    FB1_4   34    GTS/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<20>          2     2     2    FB1_5   33    GTS/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<19>          2     2     2    FB1_6   32    GTS/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<18>          2     2     2    FB1_7   31    GTS/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<17>          2     2     2    FB1_8   30    GSR/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<16>          2     2     2    FB1_9   29    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<15>          2     2     2    FB1_10  28    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<14>          2     2     2    FB1_11  27    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<13>          2     2     2    FB1_12  23    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<12>          2     2     2    FB1_13  22    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<11>          2     2     2    FB1_14  21    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<10>          2     2     2    FB1_15  20    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<9>           2     2     2    FB1_16  19    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<25>          2     2     1    FB2_1   39    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<26>          2     2     1    FB2_2   40    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<27>          2     2     1    FB2_3   41    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<28>          2     2     1    FB2_4   42    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<29>          2     2     1    FB2_5   43    GCK/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<30>          2     2     1    FB2_6   44    GCK/I/O   O       LVCMOS33           FAST DFF     RESET
+OUTPUT<0>           2     2     1    FB2_8   2     I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<1>           2     2     1    FB2_9   3     I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<2>           2     2     1    FB2_10  5     I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<3>           2     2     1    FB2_11  6     I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<4>           2     2     1    FB2_12  8     I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<5>           2     2     1    FB2_13  12    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<6>           2     2     1    FB2_14  13    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<7>           2     2     1    FB2_15  14    I/O       O       LVCMOS33           FAST DFF     RESET
+OUTPUT<8>           2     2     1    FB2_16  16    I/O       O       LVCMOS33           FAST DFF     RESET
+
+** 2 Inputs **
+
+Signal              Bank Loc     Pin   Pin       Pin     I/O      I/O
+Name                             No.   Type      Use     STD      Style
+CLR_N               2            18    I         I       LVCMOS33 KPR
+CLK                 1    FB2_7   1     GCK/I/O   GCK     LVCMOS33 KPR
+
+Legend:
+Pin No.   - ~     - User Assigned
+I/O Style - OD    - OpenDrain
+          - PU    - Pullup
+          - KPR   - Keeper
+          - S     - SchmittTrigger
+          - DG    - DataGate
+Reg Use   - LATCH - Transparent latch
+          - DFF   - D-flip-flop
+          - DEFF  - D-flip-flop with clock enable
+          - TFF   - T-flip-flop
+          - TDFF  - Dual-edge-triggered T-flip-flop
+          - DDFF  - Dual-edge-triggered flip-flop
+          - DDEFF - Dual-edge-triggered flip-flop with clock enable
+          /S (after any above flop/latch type) indicates initial state is Set
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+              VRF - Vref
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+This function block is part of I/O Bank number:               2
+Number of function block inputs used/remaining:               17/23
+Number of function block control terms used/remaining:        1/3
+Number of PLA product terms used/remaining:                   17/39
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+OUTPUT<24>                    2     FB1_1   38   I/O     O          +      
+OUTPUT<23>                    2     FB1_2   37   I/O     O          +      
+OUTPUT<22>                    2     FB1_3   36   I/O     O          +      
+OUTPUT<21>                    2     FB1_4   34   GTS/I/O O          +      
+OUTPUT<20>                    2     FB1_5   33   GTS/I/O O          +      
+OUTPUT<19>                    2     FB1_6   32   GTS/I/O O          +      
+OUTPUT<18>                    2     FB1_7   31   GTS/I/O O          +      
+OUTPUT<17>                    2     FB1_8   30   GSR/I/O O          +      
+OUTPUT<16>                    2     FB1_9   29   I/O     O          +      
+OUTPUT<15>                    2     FB1_10  28   I/O     O          +      
+OUTPUT<14>                    2     FB1_11  27   I/O     O          +      
+OUTPUT<13>                    2     FB1_12  23   I/O     O          +      
+OUTPUT<12>                    2     FB1_13  22   I/O     O          +      
+OUTPUT<11>                    2     FB1_14  21   I/O     O          +      
+OUTPUT<10>                    2     FB1_15  20   I/O     O          +      
+OUTPUT<9>                     2     FB1_16  19   I/O     O          +      
+
+Signals Used by Logic in Function Block
+  1: CLR_N              7: OUTPUT<15>        13: OUTPUT<21> 
+  2: OUTPUT<10>         8: OUTPUT<16>        14: OUTPUT<22> 
+  3: OUTPUT<11>         9: OUTPUT<17>        15: OUTPUT<23> 
+  4: OUTPUT<12>        10: OUTPUT<18>        16: OUTPUT<8> 
+  5: OUTPUT<13>        11: OUTPUT<19>        17: OUTPUT<9> 
+  6: OUTPUT<14>        12: OUTPUT<20>       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+OUTPUT<24>        X.............X......................... 2       
+OUTPUT<23>        X............X.......................... 2       
+OUTPUT<22>        X...........X........................... 2       
+OUTPUT<21>        X..........X............................ 2       
+OUTPUT<20>        X.........X............................. 2       
+OUTPUT<19>        X........X.............................. 2       
+OUTPUT<18>        X.......X............................... 2       
+OUTPUT<17>        X......X................................ 2       
+OUTPUT<16>        X.....X................................. 2       
+OUTPUT<15>        X....X.................................. 2       
+OUTPUT<14>        X...X................................... 2       
+OUTPUT<13>        X..X.................................... 2       
+OUTPUT<12>        X.X..................................... 2       
+OUTPUT<11>        XX...................................... 2       
+OUTPUT<10>        X...............X....................... 2       
+OUTPUT<9>         X..............X........................ 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*********************************** FB2  ***********************************
+This function block is part of I/O Bank number:               1
+Number of function block inputs used/remaining:               16/24
+Number of function block control terms used/remaining:        2/2
+Number of PLA product terms used/remaining:                   17/39
+Signal                        Total Loc     Pin  Pin     Pin   CTC CTR CTS CTE
+Name                          Pt            No.  Type    Use   
+OUTPUT<25>                    2     FB2_1   39   I/O     O          +      
+OUTPUT<26>                    2     FB2_2   40   I/O     O          +      
+OUTPUT<27>                    2     FB2_3   41   I/O     O          +      
+OUTPUT<28>                    2     FB2_4   42   I/O     O          +      
+OUTPUT<29>                    2     FB2_5   43   GCK/I/O O          +      
+OUTPUT<30>                    2     FB2_6   44   GCK/I/O O          +      
+(unused)                      0     FB2_7   1    GCK/I/O GCK   
+OUTPUT<0>                     2     FB2_8   2    I/O     O              +  
+OUTPUT<1>                     2     FB2_9   3    I/O     O          +      
+OUTPUT<2>                     2     FB2_10  5    I/O     O          +      
+OUTPUT<3>                     2     FB2_11  6    I/O     O          +      
+OUTPUT<4>                     2     FB2_12  8    I/O     O          +      
+OUTPUT<5>                     2     FB2_13  12   I/O     O          +      
+OUTPUT<6>                     2     FB2_14  13   I/O     O          +      
+OUTPUT<7>                     2     FB2_15  14   I/O     O          +      
+OUTPUT<8>                     2     FB2_16  16   I/O     O          +      
+
+Signals Used by Logic in Function Block
+  1: CLR_N              7: OUTPUT<27>        12: OUTPUT<3> 
+  2: OUTPUT<0>          8: OUTPUT<28>        13: OUTPUT<4> 
+  3: OUTPUT<1>          9: OUTPUT<29>        14: OUTPUT<5> 
+  4: OUTPUT<24>        10: OUTPUT<2>         15: OUTPUT<6> 
+  5: OUTPUT<25>        11: OUTPUT<30>        16: OUTPUT<7> 
+  6: OUTPUT<26>       
+
+Signal                     1         2         3         4 FB      
+Name             0----+----0----+----0----+----0----+----0 Inputs  
+OUTPUT<25>        X..X.................................... 2       
+OUTPUT<26>        X...X................................... 2       
+OUTPUT<27>        X....X.................................. 2       
+OUTPUT<28>        X.....X................................. 2       
+OUTPUT<29>        X......X................................ 2       
+OUTPUT<30>        X.......X............................... 2       
+OUTPUT<0>         X.........X............................. 2       
+OUTPUT<1>         XX...................................... 2       
+OUTPUT<2>         X.X..................................... 2       
+OUTPUT<3>         X........X.............................. 2       
+OUTPUT<4>         X..........X............................ 2       
+OUTPUT<5>         X...........X........................... 2       
+OUTPUT<6>         X............X.......................... 2       
+OUTPUT<7>         X.............X......................... 2       
+OUTPUT<8>         X..............X........................ 2       
+                 0----+----1----+----2----+----3----+----4
+                           0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+FDCPE_OUTPUT0: FDCPE port map (OUTPUT(0),OUTPUT(30),CLK,'0',NOT CLR_N,'1');
+
+FDCPE_OUTPUT1: FDCPE port map (OUTPUT(1),OUTPUT(0),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT2: FDCPE port map (OUTPUT(2),OUTPUT(1),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT3: FDCPE port map (OUTPUT(3),OUTPUT(2),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT4: FDCPE port map (OUTPUT(4),OUTPUT(3),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT5: FDCPE port map (OUTPUT(5),OUTPUT(4),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT6: FDCPE port map (OUTPUT(6),OUTPUT(5),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT7: FDCPE port map (OUTPUT(7),OUTPUT(6),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT8: FDCPE port map (OUTPUT(8),OUTPUT(7),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT9: FDCPE port map (OUTPUT(9),OUTPUT(8),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT10: FDCPE port map (OUTPUT(10),OUTPUT(9),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT11: FDCPE port map (OUTPUT(11),OUTPUT(10),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT12: FDCPE port map (OUTPUT(12),OUTPUT(11),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT13: FDCPE port map (OUTPUT(13),OUTPUT(12),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT14: FDCPE port map (OUTPUT(14),OUTPUT(13),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT15: FDCPE port map (OUTPUT(15),OUTPUT(14),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT16: FDCPE port map (OUTPUT(16),OUTPUT(15),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT17: FDCPE port map (OUTPUT(17),OUTPUT(16),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT18: FDCPE port map (OUTPUT(18),OUTPUT(17),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT19: FDCPE port map (OUTPUT(19),OUTPUT(18),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT20: FDCPE port map (OUTPUT(20),OUTPUT(19),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT21: FDCPE port map (OUTPUT(21),OUTPUT(20),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT22: FDCPE port map (OUTPUT(22),OUTPUT(21),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT23: FDCPE port map (OUTPUT(23),OUTPUT(22),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT24: FDCPE port map (OUTPUT(24),OUTPUT(23),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT25: FDCPE port map (OUTPUT(25),OUTPUT(24),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT26: FDCPE port map (OUTPUT(26),OUTPUT(25),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT27: FDCPE port map (OUTPUT(27),OUTPUT(26),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT28: FDCPE port map (OUTPUT(28),OUTPUT(27),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT29: FDCPE port map (OUTPUT(29),OUTPUT(28),CLK,NOT CLR_N,'0','1');
+
+FDCPE_OUTPUT30: FDCPE port map (OUTPUT(30),OUTPUT(29),CLK,NOT CLR_N,'0','1');
+
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FDDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ FTDCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XC2C32A-6-VQ44
+
+
+   --------------------------------  
+  /44 43 42 41 40 39 38 37 36 35 34 \
+ | 1                             33 | 
+ | 2                             32 | 
+ | 3                             31 | 
+ | 4                             30 | 
+ | 5         XC2C32A-6-VQ44      29 | 
+ | 6                             28 | 
+ | 7                             27 | 
+ | 8                             26 | 
+ | 9                             25 | 
+ | 10                            24 | 
+ | 11                            23 | 
+ \ 12 13 14 15 16 17 18 19 20 21 22 /
+   --------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 CLK                              23 OUTPUT<13>                    
+  2 OUTPUT<0>                        24 TDO                           
+  3 OUTPUT<1>                        25 GND                           
+  4 GND                              26 VCCIO-3.3                     
+  5 OUTPUT<2>                        27 OUTPUT<14>                    
+  6 OUTPUT<3>                        28 OUTPUT<15>                    
+  7 VCCIO-3.3                        29 OUTPUT<16>                    
+  8 OUTPUT<4>                        30 OUTPUT<17>                    
+  9 TDI                              31 OUTPUT<18>                    
+ 10 TMS                              32 OUTPUT<19>                    
+ 11 TCK                              33 OUTPUT<20>                    
+ 12 OUTPUT<5>                        34 OUTPUT<21>                    
+ 13 OUTPUT<6>                        35 VCCAUX                        
+ 14 OUTPUT<7>                        36 OUTPUT<22>                    
+ 15 VCC                              37 OUTPUT<23>                    
+ 16 OUTPUT<8>                        38 OUTPUT<24>                    
+ 17 GND                              39 OUTPUT<25>                    
+ 18 CLR_N                            40 OUTPUT<26>                    
+ 19 OUTPUT<9>                        41 OUTPUT<27>                    
+ 20 OUTPUT<10>                       42 OUTPUT<28>                    
+ 21 OUTPUT<11>                       43 OUTPUT<29>                    
+ 22 OUTPUT<12>                       44 OUTPUT<30>                    
+
+
+Legend :  NC  = Not Connected, unbonded pin
+        PGND  = Unused I/O configured as additional Ground pin
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         WPU  = Unused I/O with weak pull up (leave unconnected)
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         VCC  = Dedicated Power Pin
+      VCCAUX  = Power supply for JTAG pins
+   VCCIO-3.3  = I/O supply voltage for LVTTL, LVCMOS33, SSTL3_I
+   VCCIO-2.5  = I/O supply voltage for LVCMOS25, SSTL2_I
+   VCCIO-1.8  = I/O supply voltage for LVCMOS18
+   VCCIO-1.5  = I/O supply voltage for LVCMOS15, HSTL_I
+        VREF  = Reference voltage for indicated input standard
+       *VREF  = Reference voltage pin selected by software
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xc2c32a-6-VQ44
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Set Unused I/O Pin Termination              : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Enable Input Registers                      : ON
+Function Block Fan-in Limit                 : 38
+Use DATA_GATE Attribute                     : ON
+Set Tristate Outputs to Termination Mode    : KEEPER
+Default Voltage Standard for All Outputs    : LVCMOS33
+Input Limit                                 : 32
+Pterm Limit                                 : 28
+</pre>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

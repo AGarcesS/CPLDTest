@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/Xilinx_ISE/rotate/rotate_tb_isim_beh.exe" -prj "/home/ise/Xilinx_ISE/rotate/rotate_tb_beh.prj" "work.rotate_tb" 

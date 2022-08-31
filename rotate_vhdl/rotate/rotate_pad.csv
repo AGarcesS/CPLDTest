@@ -1,0 +1,73 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+ 8-31-2022  1:14PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  rotate.ngd
+output file: rotate_pad.csv
+Part type:   xc2c32a
+Speed grade: -6
+Package:     vq44
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,CLK,GCK,I/O/GCK2,,LVCMOS33,1,,FAST,,,,
+P2,OUTPUT<0>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P3,OUTPUT<1>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P4,GND,,GND,,,,,,,,,,
+P5,OUTPUT<2>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P6,OUTPUT<3>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P7,,VCCIO-3.3,VCCIO,,,1,,,,,,,
+P8,OUTPUT<4>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P9,TDI,,TDI,,,,,,,,,,
+P10,TMS,,TMS,,,,,,,,,,
+P11,TCK,,TCK,,,,,,,,,,
+P12,OUTPUT<5>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P13,OUTPUT<6>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P14,OUTPUT<7>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P15,,VCC,VCC,,,,,,,,,,
+P16,OUTPUT<8>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P17,GND,,GND,,,,,,,,,,
+P18,CLR_N,I,I,INPUT,LVCMOS18,2,,FAST,,,,
+P19,OUTPUT<9>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P20,OUTPUT<10>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P21,OUTPUT<11>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P22,OUTPUT<12>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P23,OUTPUT<13>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P24,TDO,,TDO,,,,,,,,,,
+P25,GND,,GND,,,,,,,,,,
+P26,,VCCIO-3.3,VCCIO,,,2,,,,,,,
+P27,OUTPUT<14>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P28,OUTPUT<15>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P29,OUTPUT<16>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P30,OUTPUT<17>,O,I/O/GSR,OUTPUT,LVCMOS33,2,,FAST,,,,
+P31,OUTPUT<18>,O,I/O/GTS2,OUTPUT,LVCMOS33,2,,FAST,,,,
+P32,OUTPUT<19>,O,I/O/GTS3,OUTPUT,LVCMOS33,2,,FAST,,,,
+P33,OUTPUT<20>,O,I/O/GTS0,OUTPUT,LVCMOS33,2,,FAST,,,,
+P34,OUTPUT<21>,O,I/O/GTS1,OUTPUT,LVCMOS33,2,,FAST,,,,
+P35,,VCCAUX,VAUX,,,,,,,,,,
+P36,OUTPUT<22>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P37,OUTPUT<23>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P38,OUTPUT<24>,O,I/O,OUTPUT,LVCMOS33,2,,FAST,,,,
+P39,OUTPUT<25>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P40,OUTPUT<26>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P41,OUTPUT<27>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P42,OUTPUT<28>,O,I/O,OUTPUT,LVCMOS33,1,,FAST,,,,
+P43,OUTPUT<29>,O,I/O/GCK0,OUTPUT,LVCMOS33,1,,FAST,,,,
+P44,OUTPUT<30>,O,I/O/GCK1,OUTPUT,LVCMOS33,1,,FAST,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

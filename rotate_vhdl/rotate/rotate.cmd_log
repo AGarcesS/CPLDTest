@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/ise/Xilinx_ISE/rotate/rotate.xst" -ofn "/home/ise/Xilinx_ISE/rotate/rotate.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc rotate.ucf -p xc2c32a-VQ44-6 rotate.ngc rotate.ngd  
+cpldfit -intstyle ise -p xc2c32a-6-VQ44 -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS33 rotate.ngd 
+XSLTProcess rotate_build.xml 
+tsim -intstyle ise rotate rotate.nga 
+taengine -intstyle ise -f rotate -w --format html1 -l rotate_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -i rotate 

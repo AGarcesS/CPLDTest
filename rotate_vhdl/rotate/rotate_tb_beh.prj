@@ -1,0 +1,2 @@
+vhdl work "rotate.vhd"
+vhdl work "rotate_tb.vhd"
