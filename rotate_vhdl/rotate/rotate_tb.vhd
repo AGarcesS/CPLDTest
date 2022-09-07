@@ -51,7 +51,7 @@ ARCHITECTURE behavior OF rotate_tb IS
 		 );
     END COMPONENT;
 	 
-	 constant SR_SIZE: positive := 30;
+	 constant SR_SIZE: positive := 31;
 	 constant SR_ROT_SIZE:positive := 1;    
 
    --Inputs
