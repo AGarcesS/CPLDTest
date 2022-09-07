@@ -1,6 +1,6 @@
 #include "Test.h"
 
-const int output_start = 23, clr_n = 7, clk = 22, v_5 = A0, v_33 = A1, v_18 = A2; //definición de los pines (7 original)
+const int output_start = 23, clr_n = 7, clk = 22, v_5 = A0, v_33 = A1, v_18 = A2; //definición de los pines
 
 Test test(output_start); //construcción del objeto test
 
@@ -22,13 +22,13 @@ void setup() {
 void loop() {  
   switch (test.getProgress()) {    
     case 1:
-      test.voltageRead(v_5, 942, 1024); //lectura 5V
+      test.voltageRead(v_5, 911, 1024); //lectura 5V
       break;
     case 2:
       test.voltageRead(v_33, 662, 690); //lectura 3V3
       break;
     case 3:
-      test.voltageRead(v_18, 313, 424); //lectura 1V8
+      test.voltageRead(v_18, 361, 376); //lectura 1V8
       break;
 
     case 4:
